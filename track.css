@@ -50,6 +50,8 @@ nav .logo {
     gap: 1.8rem;
     list-style: none;
     color: black;
+    
+
 
 }
 
@@ -70,7 +72,7 @@ nav .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .mainBox .heading .headline {
@@ -81,6 +83,7 @@ nav .logo {
     font-weight: 600;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 .mainBox .mainContent {
     font-size: 2rem;
     color: var(--font);
@@ -99,7 +102,7 @@ nav .logo {
 
 input[type=text] {
     width: 500px;
-    height: 35px;
+    height: 38px;
     outline: none;
     border: 1px solid grey;
     border-radius: 3px;
@@ -107,13 +110,12 @@ input[type=text] {
     color: var(--primary);
     font-size: 1rem;
     font-weight: 400;
-    margin: 6px -130px 0px 20px;
-    padding: 10px;
-    
+    margin: 5px -130px 0px 20px;
+
 }
 
 .main #btn #btn1 {
-    height: 38px;
+    height: 40px;
     width: 130px;
     background-color: var(--primary);
     color: #FFFFFF;
@@ -126,40 +128,45 @@ input[type=text] {
     outline: none;
     border: none;
 }
-.details
-{
+#btn1:hover {
+    color: var(--font);
+}
+.details {
     margin: 80px 0px 0px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.info, .status 
-{
+
+.info,
+.status {
     height: 250px;
     width: 700px;
     border: 2px solid grey;
 }
-.result
-{
+
+.result {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 50px 0px 0px 0px;
+    padding-bottom: 25px;
 }
-.result img
-{
+
+.result img {
     height: 150px;
     width: 150px;
 }
-.keypoint
-{
-    border: 2px solid red;
+
+.keypoint {
+    border: 2px solid rgb(116, 113, 113);
     height: 150px;
     width: 250px;
 }
-.path
-{
-    
+
+.path {
+
     width: 1000px;
-    border: 2px solid red;
+    border: 2px solid rgb(116, 113, 113);
+
 }

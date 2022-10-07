@@ -10,7 +10,7 @@
 
 html,
 body {
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 100%;
     min-height: 100%;
     margin: 0;
@@ -18,10 +18,10 @@ body {
     box-sizing: border-box;
     font-family: 'Readex Pro', sans-serif;
 
-    background-image: url('images/1.jpg');
+    background-image: url('images/4.jpg');
     background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: bottom 0% right 90%;
+    background-size: 40%;
+    background-position: bottom 50% right 50%;
 }
 
 /* Start Design of Header */
@@ -72,53 +72,17 @@ nav .logo {
 
 /* end design of header */
 
-
 section {
-    width: 300px;
-    float: right;
-    margin: 100px 120px;
-    border: 2px solid;
-}
-
-section .image {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-section .image img {
-    height: 100px;
-    border-radius: 50%;
-}
-
-form {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: row; */
     align-items: center;
-}
-
-form .radio {
-    margin-right: 70px;
-}
-
-input[type=text],
-input[type=password],
-input[type=email] {
-    width: 250px;
-    height: 20px;
-    margin: 5px;
-    padding: 12px 0px;
-    font-size: 0.8rem;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid black;
-    background: transparent;
-    color: var(--primary);
+    justify-content: center;
 }
 
 button {
     height: 35px;
     width: 130px;
-    margin: 30px;
+    margin: 50px;
     background-color: var(--primary);
     color: #FFFFFF;
     font-size: 1.2rem;
@@ -128,11 +92,51 @@ button {
     text-align: center;
     outline: none;
     border: none;
-    transition: background-color 3s;
+
+}
+button:hover {
+    color: var(--font);
+}
+input[type=text] {
+    width: 200px;
+    height: 35px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    background: transparent;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1px 23px 23px 23px;
+}
+
+.newfile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-right: 5px solid gray;
 
 }
 
-button:hover {
-    background-color: transparent;
-    color: var(--font);
+.tagline {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#addnew {
+    margin: 0px auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    margin: 167px 0px 0px 50px;
+}
+.radio
+{
+    margin: 0px 0px 20px 0px;
 }

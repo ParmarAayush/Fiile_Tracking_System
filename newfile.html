@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTS:New File & Update</title>
+    <link rel="stylesheet" href="newfile.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <p>File Transfer<br /> System</p>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="newfile.html">New File</a></li>
+                    <li><a href="track.html">Track File</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="newfile">
+            <p class="tagline">ADD NEW FILE</p>
+            <input type="text" name="trackingId" id="tracking_id" placeholder="Tracking Id">
+            <input type="text" name="subject" id="subject" placeholder="Reson">
+            <input type="text" name="receivedFrom" id="receivedFrom" placeholder="Owner Name">
+            <input type="text" name="date" id="date" placeholder="Date">
+            <input type="text" name="color" id="color" placeholder="Color">
+            <input type="text" name="officerName" id="officerName" placeholder="Officer Name">
+
+            <button type="submit" id="addnew">ADD NEW</button>
+        </div>
+        <div class="progress">
+            <p class="tagline">UPDATE FILE PROGRESS</p>
+            <input type="text" name="Tracking Id" id="trackingId" placeholder="Tracking Id">
+            <div class="radio">
+                <input type="radio" name="status" id="approved">
+                <label for="status">Approved</label>
+        
+                <input type="radio" name="status" id="id_progress">
+                <label for="status">In Progress</label>
+        
+                <input type="radio" name="status" id="declined">
+                <label for="status">Declined</label>
+            </div>
+            <input type="text" name="date" id="date" placeholder="Date Of Update">
+            <input type="text" name="officerName" id="officerName" placeholder="officer Name">
+            <input type="text" name="msg" id="msg" placeholder="Extra Info Like Reson of declined">
+            
+            <button type="submit" >UPDATE</button>
+        </div>
+    </section>
+</body>
+</html>
